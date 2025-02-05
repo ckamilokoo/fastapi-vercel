@@ -20,7 +20,9 @@ class User(BaseModel):
     email: str
     password: str
 
-
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
 
 @app.post("/register")
 async def register(user: User):
