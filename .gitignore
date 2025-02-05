@@ -1,0 +1,35 @@
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entorno virtual (si lo usas)
+venv/
+.env
+*.env
+ambiente/
+
+
+# Dependencias en caché
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Configuración de IDEs (VSCode, PyCharm)
+.vscode/
+.idea/
+
+# Archivos de logs y bases de datos temporales
+logs/
+*.log
+db.sqlite3
+instance/
+
+# Node.js (si usas algún paquete de npm en Vercel)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Archivos de despliegue de Vercel (excepto vercel.json si es necesario)
+.vercel/
