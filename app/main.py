@@ -5,6 +5,7 @@ import os
 from dotenv import load_dotenv
 import bcrypt
 from app.database import supabase
+from fastapi.middleware.cors import CORSMiddleware
 
 
 # Cargar variables de entorno
@@ -12,6 +13,17 @@ load_dotenv()
 
 # Inicializar FastAPI y cliente de Supabase
 app = FastAPI()
+
+
+# Habilitar CORS en la aplicación
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Permitir peticiones de cualquier origen
+    allow_credentials=True,
+    allow_methods=["*"],  # Permitir todos los métodos (GET, POST, etc.)
+    allow_headers=["*"],  # Permitir todos los headers
+)
+
 
 print(supabase)
 
