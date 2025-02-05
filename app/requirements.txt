@@ -1,4 +1,5 @@
 fastapi
+supabase
 uvicorn
 annotated-types==0.6.0
 anyio==4.3.0
